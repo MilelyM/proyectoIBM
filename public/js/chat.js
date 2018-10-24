@@ -1,32 +1,18 @@
 let userList = null;
-let receivers = null;
+let chatRef = null;
+let receiver = null;
 
-
-const showMessages = (uid) => {
+const showMessages = (messages) => {
   messageContainer.innerHTML = '';
-  firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages')
-    .limitToLast(2)
-    .on('child_added', (newMessage) => {
-
-      messageContainer.innerHTML += `
+  messages.forEach((newMessage) => {
+    messageContainer.innerHTML += `
         <p>Nombre : ${newMessage.val().creatorName}</p>
         <p>${newMessage.val().text}</p>`;
-    });
-
+  });
 };
 
-let createChat = (uid1, uid2) => {
-  console.log(uid1);
-  console.log(uid2);
-  if (uid1 > uid2) {
-    return uid1 + uid2;
-  } else {
-    return uid2 + uid1;
-  }
-}
-
 // Usaremos una colección para guardar los mensajes, llamada messages
-const sendMessage = (uid) => {
+const sendMessage = () => {
   const currentUser = firebase.auth().currentUser;
   const messageAreaTextChat = txt.value;
   txt.value = '';
@@ -34,34 +20,33 @@ const sendMessage = (uid) => {
     alert('no puedes enviar mensajes vacíos')
   } else {
     //Para tener una nueva llave en la colección messages
-    firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages').push({
+    chatRef.push({
       creator: currentUser.uid,
       creatorName: currentUser.displayName,
-      receiver: receiverName.value,
-      text: messageAreaTextChat,
-      read: false,
-
-    })
-
-
+      receiver: receiver,
+      text: messageAreaTextChat
+    });
   }
 }
 
-
+let createChat = (uid1, uid2) => {
+  if (uid1 > uid2) {
+    return uid1 + uid2;
+  } else {
+    return uid2 + uid1;
+  }
+}
 
 let privateChat = (uid, name, picture) => {
-  chatRef = firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages');
-
   event.preventDefault();
   if (chatRef) {
     chatRef.off();
   }
+  chatRef = firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages');
   chatRef.on('value', showMessages);
   document.getElementById('receiverName').value = name;
   showContacts([]);
 }
-
-
 
 const showContacts = (users) => {
   let contactsByOrder = '<ul>';
@@ -85,7 +70,3 @@ const findReceiver = (event) => {
   });
   showContacts(receivers);
 };
-
-mapIcon.addEventListener('click', () => {
-  showMap();
-});
