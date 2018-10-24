@@ -3,17 +3,21 @@ let userCreate = null;
 
 // Initialize Firebase
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
-  authDomain: "ibmchat-e1ce2.firebaseapp.com",
-  databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
-  projectId: "ibmchat-e1ce2",
-  storageBucket: "ibmchat-e1ce2.appspot.com",
-  messagingSenderId: "299553386584"
-};
-firebase.initializeApp(config);
+window.onload = () => {
+  var config = {
+    apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
+    authDomain: "ibmchat-e1ce2.firebaseapp.com",
+    databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
+    projectId: "ibmchat-e1ce2",
+    storageBucket: "ibmchat-e1ce2.appspot.com",
+    messagingSenderId: "299553386584"
+  };
+  firebase.initializeApp(config);
 
-let provider = new firebase.auth.GoogleAuthProvider();
+  let provider = new firebase.auth.GoogleAuthProvider();
+
+  var ref = firebase.database().ref();
+};
 
 //Autenticación
 
@@ -32,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         console.log(user)
-        login.style.display = 'none';
-        welcomeUser.style.display = 'block';
         document.getElementById("userLogin").innerHTML = "Hola " + user.displayName;
 
         userCreate = firebase.database().ref('users/' + user.uid); +
@@ -55,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // firebase.database().ref('/users').on('value', showContacts);
-  firebase.database().ref("/post").on('value', drawPosts);
+  // firebase.database().ref("/post").on('value', drawPosts);
   // firebase.database().ref("/messages").on("value", lastMessages);
 
 

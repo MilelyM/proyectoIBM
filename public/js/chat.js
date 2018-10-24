@@ -2,9 +2,9 @@ let userList = null;
 let receivers = null;
 
 
-const showMessages = (messages) => {
+const showMessages = (uid) => {
   messageContainer.innerHTML = '';
-  firebase.database().ref('chats/' + createChat(firebase.auth().currentUser.uid) + '/messages')
+  firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages')
     .limitToLast(2)
     .on('child_added', (newMessage) => {
 
@@ -16,6 +16,8 @@ const showMessages = (messages) => {
 };
 
 let createChat = (uid1, uid2) => {
+  console.log(uid1);
+  console.log(uid2);
   if (uid1 > uid2) {
     return uid1 + uid2;
   } else {
@@ -24,7 +26,7 @@ let createChat = (uid1, uid2) => {
 }
 
 // Usaremos una colección para guardar los mensajes, llamada messages
-const sendMessage = () => {
+const sendMessage = (uid) => {
   const currentUser = firebase.auth().currentUser;
   const messageAreaTextChat = txt.value;
   txt.value = '';
@@ -32,7 +34,7 @@ const sendMessage = () => {
     alert('no puedes enviar mensajes vacíos')
   } else {
     //Para tener una nueva llave en la colección messages
-    firebase.database().ref('chats/' + createChat(firebase.auth().currentUser.uid) + '/messages').push({
+    firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages').push({
       creator: currentUser.uid,
       creatorName: currentUser.displayName,
       receiver: receiverName.value,
@@ -49,6 +51,7 @@ const sendMessage = () => {
 
 let privateChat = (uid, name, picture) => {
   chatRef = firebase.database().ref('chats/' + createChat(uid, firebase.auth().currentUser.uid) + '/messages');
+
   event.preventDefault();
   if (chatRef) {
     chatRef.off();
