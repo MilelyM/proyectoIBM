@@ -2,7 +2,7 @@
 #box1, #box2, #box3, #box4, #box5, #box6 {
     color: white;
     height: 7rem;
-    background-color: red;
+    /* background-color: red; */
     text-align: center;
 }
 
