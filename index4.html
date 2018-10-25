@@ -28,7 +28,36 @@
 </head>
 
 <body>
-      <!-- Pintura del chat -->
+        <ul id="dropdown1" class="dropdown-content">
+                <li><a href="index1.html" onclick="inicio()">Inicio</a></li>
+                <li><a href="index2.html" onclick="regularizarBtn()">Regularizaciín migratoria</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Trabajo</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Salud</a></li>
+                <li><a href="#!">Educación</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Vivienda</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Cursos de español</a></li>
+                <li><a id="out" style="text-align: left">
+                  <u>Cerrar Sesión</u>
+                </a> </li>
+              </ul>
+          
+              <div class="navbar-fixed" id="navBar">
+                <nav class="colorNav">
+                  <div class="nav-wrapper">
+                    <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
+                    <ul class="right">
+                      <li><p>ES/CRL</p></li>
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+    <!-- Pintura del chat -->
       <div class="container-fluid" id="welcomeUser">
             <div id="userLogin"></div>
             <!-- <a  class="btn" id="out" style="text-align: left">
@@ -87,7 +116,19 @@
                   <i class="large material-icons">mode_comment</i>
                 </a>
               </div>
-
+              <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+              <script>
+                // Initialize Firebase
+                var config = {
+                  apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
+                  authDomain: "ibmchat-e1ce2.firebaseapp.com",
+                  databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
+                  projectId: "ibmchat-e1ce2",
+                  storageBucket: "ibmchat-e1ce2.appspot.com",
+                  messagingSenderId: "299553386584"
+                };
+                firebase.initializeApp(config);
+              </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

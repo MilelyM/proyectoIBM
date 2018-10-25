@@ -40,12 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (user) {
         console.log(user)
         document.getElementById("userLogin").innerHTML = "Hola " + user.displayName;
-        // titulo.style.display = "none";
-        // navBar.style.display = "block";
-        // regulariz.style.display = "block";
-        // carousel.style.display = "block"; 
-        // botones.style.display = "block";
-        // login.stule.display = "none;"
 
         userCreate = firebase.database().ref('users/' + user.uid);
         let conectados = userCreate.set({
@@ -54,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
           photoUrl: user.photoURL || '',
           createdOn: user.metadata.createdAt || new Date(),
           uid: user.uid,
-          userConected: true
+          userConected: false
         })
         newUser(user);
         console.log(user.uid + user.displayName);
@@ -78,40 +72,62 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 out.addEventListener('click', () => {
-  firebase.auth().signOut();
-  // userCreate = firebase.database().ref('users/' + user.uid);
-  // userCreate.update({
-  //   userConected: false
+  let user = firebase.auth().currentUser;
+  userCreate = firebase.database().ref('users/' + user.uid);
+  userCreate.update({
+    userConected: false
 
-  // })
+  }, function (error) {
+    if (error) {
+      console.log("error actualizando");
+    } else {
+      console.log("actualización exitosa" + user.uid);
+    }
+  })
+  console.log('chaolin ');
+  firebase.auth().signOut();
 
 });
 
-function newUser(user, uid) {
-  userCreate = firebase.database().ref('users/' + user.uid);
+function newUser(uid) {
+  user = firebase.auth().currentUser;
+  userCreate = firebase.database().ref('users/');
 
   userCreate.on('value', function (snapshot) {
-    console.log(snapshot.val())
-    console.log(`Ha ingresado a la sala ${snapshot.val().displayName}`);
-    contUser = contUser + 1;
-    userOnline.textContent = contUser;
-    userConected(name, uid);
+    let users = snapshot.val();
+    console.log((snapshot.val()["3odJSWkYzcRGzevLysUWnoRdFlA2"]));
+    console.log(Object.keys(users));
+    console.log(`Ha ingresado a la sala ${user.displayName}`);
+    let arrayKeys = Object.keys(users);
+    arrayKeys.forEach(element => {
+      user = users[element];
+      if (user.userConected === true) {
+        contUser++;
+        userOnline.textContent = contUser;
+        userConected(name, uid);
+      }
+    })
   });
 };
-// window.addEventListener("beforeunload", function (event) {
-//   if (firebase.auth().signOut()) {
-//     userCreate = firebase.database().ref('users/' + user.uid);
-//     userCreate.update({
-//       userConected: false
-//     })
-//   }
-// });
+window.addEventListener("beforeunload", function (event) {
+  userCreate = firebase.database().ref('users/' + user.uid);
+  console.log(userCreate);
+  userCreate.update({
+    userConected: false
+  })
+
+});
 
 
 
 
 function userConected(name, uid) {
 
-  var li = `<li id="${uid}"><span><i class="material-icons">person</i>${name}</span></li>`
+  var li = `
+  <li id="${uid}">
+  <span>
+  <i class="material-icons">person</i>${name}
+  </span>
+  </li>`
   $('#userOnline').append(li);
 };
