@@ -3,7 +3,7 @@
     display: block;
 }
 
-#navBar, #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #titulo{
+ #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone{
     display: none;
 }
 
@@ -45,9 +45,9 @@ html, body {
 .botonesReg{
     margin-top: 3em;
 }
-.loginPage{
+/* .loginPage{
     display: none;
-} 
+}  */
 
 
 .colorTexto{
@@ -60,4 +60,7 @@ background-color: #55becc !important;
 }
 .tamañoTextslidr{
     font-size: 35px
+}
+.imglogo{
+    margin-left: 8rem !important;
 }

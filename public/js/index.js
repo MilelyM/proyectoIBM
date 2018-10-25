@@ -1,11 +1,19 @@
-function IniciarSesion() {
-    login.style.display = "none"
-    navBar.style.display = "block";
-    regulariz.style.display = "block";
-    carousel.style.display = "block"; 
-    chatBtn.style.display = "block";
-    botones.style.display = "block";
-}
+// function IniciarSesion() {
+//     login.style.display = "none"
+//     navBar.style.display = "block";
+//     regulariz.style.display = "block";
+//     carousel.style.display = "block"; 
+//     chat-btn.style.display = "block";
+//     botones.style.display = "block";
+// }
+// document.getElementById("firebaseui-auth-container").addEventListener("click", function(){
+//     document.getElementById("demo").innerHTML =      login.style.display = "none"
+//          navBar.style.display = "block";
+//         regulariz.style.display = "block";
+//        carousel.style.display = "block"; 
+//          botones.style.display = "block";
+//          login.style.display= "none"
+// });
 
 function iniciarChat() {
     chat.style.display = "block";

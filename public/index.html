@@ -30,24 +30,26 @@
 <body>
   <!-- Login -->
   <div class="container-fluid" id="login">
- 
-     <div class="col s4"></div>
-     <div class="col s4">
-       <div id="titulo">
+<div class="row">
+     <div class="col s12">
+       <div class="center" id="titulo">
+          <img src="./image/logoblanco.png" alt="" class="responsive-img imglogo" width="30%" height="30%">
          <!-- <h1 style="color: #E5E5E5 ">SOCIAL</h1> -->
          <!-- <br> -->
          <!-- <h1 style="color: #E5E5E5">INMG</h1> -->
-         <img src="./image/logoblanco.png" alt="" srcset="">
-         <input type="text" name="" id="">
-         <input type="text" name="" id="">
+         <div class="input-field  col s12 ">
+            <input placeholder="Número de celular" id="first_phone" type="text" class="validate " >
+          </div>
+          <div class="input-field col s12">
+              <input placeholder="Contraseña" id="first_name" type="text" class="validate">
+            </div>
 
        </div>
        <form action="" id="loginContent">
-         <div id="firebaseui-auth-container" onclick="iniciarSesion()"></div>
+         <div id="firebaseui-auth-container" ></div>
        </form>
      </div>
-     <div class="col-sm-4"></div>
- 
+ </div>
 
   <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -133,7 +135,7 @@
 
   <!--Botón que dirije al chat-->
   <div class="fixed-action-btn" id="chat-btn">
-    <a class="btn-floating btn-large red">
+    <a class="btn-floating btn-large red" onclick="iniciarChat()">
       <i class="large material-icons">mode_comment</i>
     </a>
   </div>

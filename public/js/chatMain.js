@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (user) {
         console.log(user)
         document.getElementById("userLogin").innerHTML = "Hola " + user.displayName;
+        titulo.style.display = "none";
+        navBar.style.display = "block";
+        regulariz.style.display = "block";
+        carousel.style.display = "block"; 
+        botones.style.display = "block";
+        login.stule.display = "none;"
 
         userCreate = firebase.database().ref('users/' + user.uid);
         let conectados = userCreate.set({
