@@ -4,6 +4,11 @@
 
 #navBar, #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat {
 */
+
+html, body {
+    margin: 0;
+}
+
 .chatZone{
     display: none;
 
@@ -28,7 +33,6 @@
     width: 1.5em;
     height: 1.5em;
     margin-left: 10px;
-    margin-top: 10px;
 }
 
 .bienvenido{
