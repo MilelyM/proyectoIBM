@@ -15,13 +15,13 @@
 //          login.style.display= "none"
 // });
 
-function iniciarChat() {
-    chat.style.display = "block";
-    regulariz.style.display = "none";
-    carousel.style.display = "none"; 
-    chatBtn.style.display = "none";
-    botones.style.display = "none";
-}
+// function iniciarChat() {
+//     chat.style.display = "block";
+//     regulariz.style.display = "none";
+//     carousel.style.display = "none"; 
+//     chatBtn.style.display = "none";
+//     botones.style.display = "none";
+// }
 
 $(document).ready(function(){
     $('.sidenav').sidenav();

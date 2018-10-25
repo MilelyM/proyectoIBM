@@ -158,3 +158,53 @@ li {
 span {
     color: black;
 }
+
+
+p.irr_title {
+    text-transform: none;
+}
+
+p.re_title {
+    text-transform: none;
+}
+
+p.irr_subtitle, .re_subtitle {
+    line-height: 13px;
+    font-size: 12px;
+    text-transform: none;
+    color: rgb(9, 9, 65);
+}
+
+.fa-hand-paper:before {
+    font-size: 48px;
+}
+
+.fa-user-clock:before {
+    font-size: 48px;
+}
+
+.title_page {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p.subtitle_page {
+    color: rgb(22, 22, 110);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+p.subtitle_page2 {
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+}
+
+.download_btn {
+    background-color: #55BECC;
+    color: white;
+    font-weight: 600;
+}

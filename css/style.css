@@ -1,12 +1,4 @@
 
-#login{
-    display: block;
-}
-
- #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone{
-    display: none;
-}
-
 html, body {
     margin: 0;
 }
@@ -61,6 +53,6 @@ background-color: #55becc !important;
 .tamañoTextslidr{
     font-size: 35px
 }
-.imglogo{
+/* .imglogo{
     margin-left: 8rem !important;
-}
+} */
