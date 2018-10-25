@@ -1,24 +1,39 @@
 #regulariz{
     display: none;
 }
-/* #login{
+#login{
     display: none;
-} */
-/* #welcomeUser{
+}
+#welcomeUser{
     display: none;
-} */
-#botones{
+}
+/* #botones{
     display: none;
 
-}
-#carrousel{
+} */
+/* #carrousel{
     display: none;
-}
-nav{
+} */
+/* nav{
     display: none;
-}
+} */
 
 #chat{
     display: none;
  
+}
+.colorNav{
+    background-color: #55becc;
+}
+.bienvenido{
+display: block;
+}
+
+.colorBotones{
+    background-color: #55becc;
+    height: 5em;
+    width: 11em;
+}
+.botonesReg{
+    margin-top: 2em;
 }
