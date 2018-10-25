@@ -1,32 +1,3 @@
-/* valeuno */
-#box1, #box2, #box3, #box4, #box5, #box6 {
-    color: white;
-    height: 7rem;
-    background-color: red;
-    text-align: center;
-}
-
-/* valedos */
-#header {
-    text-align: center;
-}
-
-.box1, .box2 {
-    background-color: blueviolet;
-    height: 7rem;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.2rem;
-    margin: 0;
-}
-
-/* Chat */
-#chat {
-    display: none;
-}
-
 * {
     font-family: 'Roboto', sans-serif;
 }
