@@ -1,5 +1,6 @@
 //Variables Globales
 let userCreate = null;
+let contUser = 0;
 
 // Initialize Firebase
 // Initialize Firebase
@@ -12,15 +13,17 @@ window.onload = () => {
     storageBucket: "ibmchat-e1ce2.appspot.com",
     messagingSenderId: "299553386584"
   };
-  firebase.initializeApp(config);
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp({});
+  }
 
   let provider = new firebase.auth.GoogleAuthProvider();
 
-  var ref = firebase.database().ref();
+
 };
 
 //Autenticación
-
 document.addEventListener('DOMContentLoaded', function () {
   try {
     let app = firebase.app();
@@ -38,14 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(user)
         document.getElementById("userLogin").innerHTML = "Hola " + user.displayName;
 
-        userCreate = firebase.database().ref('users/' + user.uid); +
-        userCreate.set({
+        userCreate = firebase.database().ref('users/' + user.uid);
+        let conectados = userCreate.set({
           displayName: user.displayName || user.providerData[0].email,
           email: user.email || user.providerData[0].email,
           photoUrl: user.photoURL || '',
           createdOn: user.metadata.createdAt || new Date(),
-          uid: user.uid
+          uid: user.uid,
+          userConected: true
         })
+        newUser(user);
         console.log(user.uid + user.displayName);
       } else {
         document.getElementById('userLogin').innerHTML = '';
@@ -68,5 +73,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 out.addEventListener('click', () => {
   firebase.auth().signOut();
-  login.style.display = 'block';
+  // userCreate = firebase.database().ref('users/' + user.uid);
+  // userCreate.update({
+  //   userConected: false
+
+  // })
+
 });
+
+function newUser(user, uid) {
+  userCreate = firebase.database().ref('users/' + user.uid);
+
+  userCreate.on('value', function (snapshot) {
+    console.log(snapshot.val())
+    console.log(`Ha ingresado a la sala ${snapshot.val().displayName}`);
+    contUser = contUser + 1;
+    userOnline.textContent = contUser;
+    userConected(name, uid);
+  });
+};
+// window.addEventListener("beforeunload", function (event) {
+//   if (firebase.auth().signOut()) {
+//     userCreate = firebase.database().ref('users/' + user.uid);
+//     userCreate.update({
+//       userConected: false
+//     })
+//   }
+// });
+
+
+
+
+function userConected(name, uid) {
+
+  var li = `<li id="${uid}"><span><i class="material-icons">person</i>${name}</span></li>`
+  $('#userOnline').append(li);
+};

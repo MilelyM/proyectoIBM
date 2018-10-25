@@ -1,8 +1,9 @@
+
 #login{
     display: block;
 }
 
-#navBar, #regulariz, #carousel, #chatBtn, #botones, #welcomUser, #chat, #chatZone{
+#navBar, #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #titulo{
     display: none;
 }
 
