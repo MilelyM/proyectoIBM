@@ -29,6 +29,11 @@
 display: block;
 }
 
-.imgSlider{
-    opacity: 60% !important;
+.colorBotones{
+    background-color: #55becc;
+    height: 5em;
+    width: 11em;
+}
+.botonesReg{
+    margin-top: 2em;
 }
