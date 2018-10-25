@@ -13,60 +13,58 @@
   <!--Materialize-->
   <link rel="stylesheet" href="../assets/materialize/css/materialize.css">
 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- 
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Regularizaciín migratoria</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Trabajo</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Salud</a></li>
-    <li><a href="#!">Educación</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Vivienda</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Cursos de español</a></li>  
-  </ul>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="left brand-logo">Logo</a>
-      <ul class="right">
-    
-        <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
-      </ul>
-    </div>
-  </nav>
+  <section id="navBar">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Regularización migratoria</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Trabajo</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Salud</a></li>
+      <li><a href="#!">Educación</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Vivienda</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Cursos de español</a></li>
+    </ul>
 
-  <!--Carousel-->
-  <div class="carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
-    </div>
-    <div class="carousel-item black white-text">
-      <h2>Bienvenido a Chile</h2>
-      <p class="white-text"><img src="image/img-1.jpg"></p>
-    </div>
-    <div class="carousel-item black white-text">
-      <h2>Comienza una nueva vida</h2>
-      <p class="white-text"><img src="image/img-2.jpg"></p>
-    </div>
-    <div class="carousel-item black white-text">
-      <h2>Hacer un mejor futuro depende de ti</h2>
-      <p class="white-text"><img src="image/img-3.jpg"></p>
-    </div>
-  </div>
+    <!--Navbar-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="left brand-logo">Logo</a>
+          <ul class="right">
 
-  <div class="fixed-action-btn">
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="carrusel">
+    <div class="carousel carousel-slider">
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
+      </div>
+      <a class="carousel-item" href="#one!"><img src="image/img-1.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="image/img-2.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="image/img-3.jpg"></a>
+    </div>
+
+    <div class="fixed-action-btn">
       <a class="btn-floating btn-large red">
-          <i class="large material-icons">mode_comment</i>
+        <i class="large material-icons">mode_comment</i>
       </a>
-  </div>
-        
+    </div>
+  </section>
+
   <!--JQuery-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
