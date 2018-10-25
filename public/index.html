@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/materialize/css/materialize.css">
   <link rel="stylesheet" href="./css/valeuno.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -55,16 +56,19 @@
     <li><a href="#!">Cursos de español</a></li>
   </ul>
 
-  <nav class="colorNav">
-    <div class="nav-wrapper" >
-      <a href="#!" class="left brand-logo"></a>
-      <ul class="right">
+  <div class="navbar-fixed">
+    <nav class="colorNav">
+      <div class="nav-wrapper">
+        <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
+        <ul class="right">
 
-        <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
-      </ul>
-    </div>
-  </nav>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <!-- regularización -->
   <section id="regulariz">
     <div class="col s12">
@@ -114,34 +118,14 @@
     </div>
   </div>
 
-  <!--Carousel-->
-  <!-- <div class="carousel carousel-slider center" id="carrousel">
-    <div class="carousel-fixed-item center">
-        <h2 class="bienvenido green">Bienvenido a Chile</h2>
-
-      <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
-    </div>
-    <div class="carousel-item black white-text"> -->
-  <!-- <h2>Bienvenido a Chile</h2> -->
-  <!-- <p class="white-text"><img src="image/img-1.jpg"></p>
-    </div>
-    <div class="carousel-item black white-text">
-      <h2>Comienza una nueva vida</h2>
-      <p class="white-text"><img src="image/img-2.jpg"></p>
-    </div>
-    <div class="carousel-item black white-text">
-      <h2>Hacer un mejor futuro depende de ti</h2>
-      <p class="white-text"><img src="image/img-3.jpg"></p>
-    </div>
-  </div> -->
-
   <div class="slider" id="slider">
-      <ul class="slides">
-        <li>
-          <img src="image/img-1.jpg" class="imgSlider" > <!-- random image -->
-          <div class="caption left-align">
-            <h3>Bienvenido a Chile</h3>
-            <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
+    <ul class="slides">
+      <li>
+        <img src="image/img-1.jpg" class="imgSlider"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Bienvenido a Chile</h3>
+          <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
+
         </div>
       </li>
       <li>
@@ -170,62 +154,35 @@
 
   <!--botones-->
   <section class="container botonesReg" id="botones">
-        <div class="row">
-            <div class="col s6 m4">
-                <div id="box1">
-                    <a class="btn colorBotones"><i class="fas fa-passport"></i>Regularización migratoria</a>
-                </div>
-            </div>
-            <div class="col s6 m4">
-                <div id="box2">
-                    <a class="btn colorBotones"><i class="fas fa-briefcase-medical"></i>Trabajo</a>
-                </div>
-            </div>
-            <div class="col s6 m4">
-                <div id="box3">
-                    <a class="btn colorBotones"><i class="fas fa-briefcase-medical"></i>Salud</a>
-                </div>
-            </div>
-            <div class="col s6 m4">
-                <div id="box4">
-                    <a class="btn colorBotones"><i class="fas fa-graduation-cap"></i>Educación</a>
-                </div>
-            </div>
-            <div class="col s6 m4">
-                <div id="box5">
-                    <a class="btn colorBotones"><i class="fas fa-home "></i>Vivienda</a>
-                </div>
-            </div>
-            <div class="col s6 m4">
-                <div id="box6">
-                    <a class="btn colorBotones"><i class="fab fa-amilia"></i>Clases de español</a>
-                </div>
-            </div>
+    <div class="row">
+      <div class="col s6 m4">
+        <div id="box1">
+          <a class="btn colorBotones"><i class="fas fa-passport"></i>Regularización migratoria</a>
         </div>
       </div>
       <div class="col s6 m4">
         <div id="box2">
-          <a class="btn colorBotones">Trabajo</a>
+          <a class="btn colorBotones"><i class="fas fa-briefcase-medical"></i>Trabajo</a>
         </div>
       </div>
       <div class="col s6 m4">
         <div id="box3">
-          <a class="btn colorBotones">Salud</a>
+          <a class="btn colorBotones"><i class="fas fa-briefcase-medical"></i>Salud</a>
         </div>
       </div>
       <div class="col s6 m4">
         <div id="box4">
-          <a class="btn colorBotones">Educación</a>
+          <a class="btn colorBotones"><i class="fas fa-graduation-cap"></i>Educación</a>
         </div>
       </div>
       <div class="col s6 m4">
         <div id="box5">
-          <a class="btn colorBotones">Vivienda</a>
+          <a class="btn colorBotones"><i class="fas fa-home "></i>Vivienda</a>
         </div>
       </div>
       <div class="col s6 m4">
         <div id="box6">
-          <a class="btn colorBotones">Curso de español</a>
+          <a class="btn colorBotones"><i class="fab fa-amilia"></i>Clases de español</a>
         </div>
       </div>
     </div>
@@ -269,7 +226,7 @@
           <p class="hola">Hola, bienvenido </p>
           <p class="where">Estamos aquí para responder tus preguntas relacionadas con Migrapp</p>
           <img class="circle" id="chat_img" src="../public/image/chat.jpg" alt="">
-          <p class="nombre">José</p>
+          <p class="nombre" style="font-weight: bold;">José</p>
         </div>
         <div class="col s12">
           <div class="msg_section">
