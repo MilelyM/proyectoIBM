@@ -1,6 +1,6 @@
-#regulariz{
+/* #regulariz{
     display: none;
-}
+} */
 #login{
     display: none;
 }
@@ -21,14 +21,14 @@
 #carrousel{
     display: none;
 } 
-nav{
+/* nav{
     display: none;
-} 
+}  */
 
 #chat{
     display: none;
- 
 }
+
 .colorNav{
     background-color: #55becc;
 }
@@ -52,6 +52,6 @@ display: block;
 .botonesReg{
     margin-top: 3em;
 }
-/* .loginPage{
+.loginPage{
     display: none;
-} */
+} 

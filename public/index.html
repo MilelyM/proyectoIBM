@@ -28,6 +28,38 @@
 </head>
 
 <body>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Regularización migratoria</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Trabajo</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Salud</a></li>
+    <li><a href="#!">Educación</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Vivienda</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Cursos de español</a></li>
+  </ul>
+
+  <nav class="colorNav container-fluid">
+    <div class="nav-wrapper row">
+      <div class="col s3">
+        <img class="logo-nav" src="./image/logoblanco.png" alt="">
+      </div>
+      <div class="col s6">
+        <p>Regulariza tu situación</p>
+      </div>
+      <a href="#!" class="left brand-logo"></a>
+      <ul class="right">
+
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
   <!-- Login -->
   <section class="loginPage">
     <div class="container">
@@ -45,21 +77,20 @@
   <!-- regularización -->
   <section id="regulariz">
     <div class="col s12">
-      <h4 class="center">Regulariza tu Situación</h4>
-      <p class="center">¿Como ingresaste al país?</p>
+      <p class="center">¿Cómo ingresaste al país?</p>
       <p class="center">(Según tu respuesta te daremos la mejor orientación posible)</p>
     </div>
     <div class="col s12 center">
-      <a class="waves-effect waves-light btn-large" onclick="regular()">Regular</a>
-      <a class="waves-effect waves-light btn-large" onclick="irregular()">Irregular</a>
+      <a class="waves-effect waves-light btn-large" onclick="irregular()"><i class="fas fa-hand-paper"></i>
+      <p class="btn_title">Irregular</p>
+      <p class="btn_subtitle">(Paso fronterizo</p>
+      <p class="btn_subtitle">inhablitado)</p></a>
+      <a class="waves-effect waves-light btn-large" onclick="regular()">
+      <p class="btn_title">Regular</p>
+      <p class="btn_subtitle">(Paso fronterizo</p>
+      <p class="btn_subtitle">habilitado)</p></a>
     </div>
-    <div id="textoRegIrr">
-
-    </div>
-    <div class="col s12 center">
-      <a class="waves-effect waves-light btn-small">Descarga tu Documento</a>
-
-    </div>
+    <div id="textoRegIrr"></div>
   </section>  
 
   <!-- Pintura del chat -->
@@ -90,31 +121,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Regularizaciín migratoria</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Trabajo</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Salud</a></li>
-    <li><a href="#!">Educación</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Vivienda</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Cursos de español</a></li>
-  </ul>
-
-  <nav class="colorNav">
-    <div class="nav-wrapper" >
-      <a href="#!" class="left brand-logo"></a>
-      <ul class="right">
-
-        <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
-      </ul>
-    </div>
-  </nav>
 
   <!--Carousel-->
   <!-- <div class="carousel carousel-slider center" id="carrousel">

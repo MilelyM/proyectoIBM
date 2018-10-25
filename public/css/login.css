@@ -13,6 +13,7 @@
     background-size: cover;
     -webkit-filter: opacity(.6);
     filter: opacity(.6);
+    display: none;
 }
 
 #img-logo {
