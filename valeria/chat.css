@@ -1,0 +1,71 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bckr_hdr {
+    background-color: #55BECC;
+    height: 15rem;
+    padding: 19px;
+}
+
+.row .col {
+    padding: 0;
+}
+
+.hola {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+.msg_section {
+    background-color: white;
+    height: 21rem;
+}
+
+.fa-paper-plane:before {
+    font-size: 2.2rem;
+    color: #EE542D;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-top: 1px rgb(216, 210, 210) solid;
+    padding: 7px;
+}
+button:hover {
+    background-color: transparent;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    border-bottom: none;
+    border-top: 1px rgb(216, 210, 210) solid;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.chat_img {
+    width: 23%;
+    border-radius: 34px;
+}
+
+.wrhere {
+    margin-bottom: 5px;
+}
+
+.nombre {
+    margin-left: 14px;
+}
