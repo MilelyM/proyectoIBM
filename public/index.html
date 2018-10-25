@@ -106,9 +106,9 @@
     <li class="divider"></li>
     <li><a href="#!">Cursos de español</a></li>  
   </ul>
-  <nav>
+  <nav class="colorNav">
     <div class="nav-wrapper" >
-      <a href="#!" class="left brand-logo">Logo</a>
+      <a href="#!" class="left brand-logo"></a>
       <ul class="right">
     
         <!-- Dropdown Trigger -->
@@ -118,13 +118,15 @@
   </nav>
 
   <!--Carousel-->
-  <div class="carousel carousel-slider center" id="carrousel">
+  <!-- <div class="carousel carousel-slider center" id="carrousel">
     <div class="carousel-fixed-item center">
+        <h2 class="bienvenido green">Bienvenido a Chile</h2>
+
       <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
     </div>
-    <div class="carousel-item black white-text">
-      <h2>Bienvenido a Chile</h2>
-      <p class="white-text"><img src="image/img-1.jpg"></p>
+    <div class="carousel-item black white-text"> -->
+      <!-- <h2>Bienvenido a Chile</h2> -->
+      <!-- <p class="white-text"><img src="image/img-1.jpg"></p>
     </div>
     <div class="carousel-item black white-text">
       <h2>Comienza una nueva vida</h2>
@@ -134,13 +136,39 @@
       <h2>Hacer un mejor futuro depende de ti</h2>
       <p class="white-text"><img src="image/img-3.jpg"></p>
     </div>
-  </div>
+  </div> -->
+  <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="image/img-1.jpg" class="imgSlider" > <!-- random image -->
+          <div class="caption left-align">
+            <h3>Bienvenido a Chile</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-2.jpg" class="imgSlider"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Comienza una nueva vidan</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-3.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Hacer un mejor futuro depende de ti</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
   <div class="fixed-action-btn" id="chat">
       <a class="btn-floating btn-large red">
           <i class="large material-icons">mode_comment</i>
       </a>
     </div>
+    
 
   <!--botones-->
   <section class="container" id="botones">
@@ -180,6 +208,8 @@
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./materialize/js/materialize.js"></script>
+    <script src="./js/index.js"></script>
+
   <script src="./js/chat.js"></script>
   <script src="./js/chatMain.js"></script>
   <script src="./js/regularizacionDescarga.js"></script>
