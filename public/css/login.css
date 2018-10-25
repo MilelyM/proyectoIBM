@@ -23,12 +23,15 @@
 }
 
 #img-logo {
-    widht:10em;
+    width:10em;
     height: 10em;
 }
 
+#receiverName {
+    width: 60%;
+}
 
 textarea {
-    width: 50%;
+    width: 60%;
 }
 

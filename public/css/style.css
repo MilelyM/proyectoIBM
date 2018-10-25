@@ -1,11 +1,15 @@
 /* #regulariz{
     display: none;
-} */
+}
+
+
 #login{
     display: none;
 }
-#welcomeUser{
+
+/*#welcomeUser{
     display: none;
+
 }
 #botones{
     display: none;
@@ -13,20 +17,25 @@
 }
 #carrousel{
     display: none;
+
 }
 /* nav{
     display: none;
 } */
 
-#chat{
+/*#chat{
     display: none;
- 
+}*/
+
+.chatZone {
+    display: none;
 }
+
 .colorNav{
     background-color: #55becc;
 }
 .bienvenido{
-display: block;
+    display: block;
 }
 
 .colorBotones{
