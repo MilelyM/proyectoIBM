@@ -1,24 +1,50 @@
 #regulariz{
     display: none;
 }
-/* #login{
-    display: none;
-} */
-/* #welcomeUser{
-    display: none;
-} */
-#botones{
-    display: none;
 
-}
-#carrousel{
-    display: none;
-}
-nav{
+#login{
     display: none;
 }
 
-#chat{
+/*#welcomeUser{
     display: none;
- 
+}*/
+
+/* #botones{
+    display: none;
+
+} */
+/* #carrousel{
+    display: none;
+} */
+
+/* nav{
+    display: none;
+} */
+
+/*#chat{
+    display: none;
+}*/
+
+.chatZone {
+    display: none;
+}
+
+.colorNav{
+    background-color: #55becc;
+}
+.bienvenido{
+    display: block;
+}
+
+.colorBotones{
+    background-color: #55becc;
+    height: 5em;
+    width: 11em;
+}
+.botonesReg{
+    margin-top: 3em;
+}
+.loginPage{
+    display: none;
 }
