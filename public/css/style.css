@@ -1,6 +1,6 @@
-#regulariz{
+/* #regulariz{
     display: none;
-}
+} */
 #login{
     display: none;
 }
@@ -14,9 +14,9 @@
 #carrousel{
     display: none;
 }
-nav{
+/* nav{
     display: none;
-}
+} */
 
 #chat{
     display: none;
@@ -43,4 +43,7 @@ display: block;
 .slider{
     display: none;
 
+}
+.colorTexto{
+    color: black;
 }
