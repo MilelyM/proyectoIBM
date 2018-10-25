@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/materialize/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./css/valeuno.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/login.css">
-  <link rel="shortcut icon" href="image/logoblanco.png">
+  <link rel="shortcut icon" href="./image/favicon.png">
   <title>Welcome Migrapp</title>
 
   <!-- update the version number as needed -->
@@ -62,46 +62,47 @@
 
 
   <!-- Login -->
-
-  <div class="container-fluid" id="login">
-    <div class="row">
-     <div class="col-sm-4"></div>
-     <div class="col-sm-4">
-       <div id="titulo">
-         <br>
-       </div>
-       <form action="" id="loginContent">
-         <div id="firebaseui-auth-container"></div>
-       </form>
-     </div>
-     <div class="col-sm-4"></div>
-   </div>
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Regularizaciín migratoria</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Trabajo</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Salud</a></li>
-    <li><a href="#!">Educación</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Vivienda</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Cursos de español</a></li>
-  </ul>
-
-  <div class="navbar-fixed">
-    <nav class="colorNav">
-      <div class="nav-wrapper">
-        <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
-        <ul class="right">
-
-          <!-- Dropdown Trigger -->
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
-        </ul>
+    <div class="container-fluid" id="login">
+      <div class="row">
+        <div class="col s4"></div>
+        <div class="col s4">
+          <div id="titulo">
+            <br>
+          </div>
+          <form action="" id="loginContent">
+            <div id="firebaseui-auth-container"></div>
+          </form>
+        </div>
+        <div class="col s4"></div>
       </div>
-    </nav>
-  </div>
+  </section>
+
+  <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Regularizaciín migratoria</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Trabajo</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Salud</a></li>
+      <li><a href="#!">Educación</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Vivienda</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Cursos de español</a></li>
+    </ul>
+
+    <div class="navbar-fixed">
+      <nav class="colorNav">
+        <div class="nav-wrapper">
+          <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
+          <ul class="right">
+
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
   <!-- regularización -->
   <section id="regulariz">
@@ -109,7 +110,7 @@
 
       <h4 class="center colorTexto">Regulariza tu Situación</h4>
       <p class="center colorTexto">¿Como ingresaste al país?</p>
-      <p class="center colorTexto">(Según tu respuesta te daremos la mejor orientación posible)</p>
+      <p class="center colorTexto">(Según tu respuesta te daremos la mejor orientación posible</p>
     </div>
     <div class="col s12 center">
       <a class="waves-effect waves-light btn-large" onclick="irregular()"><i class="fas fa-hand-paper"></i>
@@ -123,42 +124,42 @@
     </div>
 
     <div id="textoRegIrr">
-
     </div>
     <div class="col s12 center" id="descarga">
       <!-- <a class="waves-effect waves-light btn-small">Descarga tu Documento</a> -->
-
     </div>
   </section>
 
-  <!-- Pintura del chat -->
-  <div class="container-fluid" id="welcomeUser">
-    <div id="userLogin"></div>
-    <p id="out" style="text-align: left">
-      <u>Sign Out</u>
-    </p>
-
-    <div class="chatZone">
-      <div id="messageContainer"></div>
-      <div class="row">
-        <div class="col-sm-4" id="mapContent"></div>
-      </div>
-      <div class="row">
-        <label for="usr">Destinatario:</label>
-      </div>
-      <div class="row">
-        <input type="text" class="form-control col-md-4" id="receiverName">
-        <div id="contactsChat"></div>
-      </div>
-      <div class="row">
-        <textarea class="form-control col-md-4" id="txt" rows="3" placeholder="Escribe tu mensaje..."></textarea>
-      </div>
-      <div class="row">
-        <button type="button" class="btn btn-outline-success" id="sendButton" value="SEND" onclick="sendMessage()">Enviar</button>
-        <i class="fas fa-map-marker-alt" id="mapIcon"></i>
-      </div>
+  <!--Carousel-->
+  <section id="carousel">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="image/img-1.jpg" class="imgSlider"> 
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Bienvenido a Chile</h3>
+            <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-2.jpg" class="imgSlider">
+          <!--random image -->
+          <div class="caption left-align">
+            <h3>Comienza una nueva vida</h3>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-3.jpg">
+          <!--random image -->
+          <div class="caption left-align">
+            <h3>Hacer un mejor futuro depende de ti</h3>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
+  </section>
+
 
 
   <div class="slider" id="slider">
@@ -188,14 +189,15 @@
     </ul>
   </div>
 
-  <div class="fixed-action-btn" id="chat">
+  <!--Botón que dirije al chat-->
+  <div class="fixed-action-btn" id="chat-btn">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">mode_comment</i>
     </a>
   </div>
 
 
-  <!--botones-->
+  <!--botones con distintos items-->
   <section class="container botonesReg" id="botones">
     <div class="row">
       <div class="col s6 m4">
@@ -303,7 +305,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script src="./materialize/js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/chat.js"></script>
   <script src="./js/chatMain.js"></script>

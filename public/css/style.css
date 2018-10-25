@@ -1,42 +1,13 @@
-/* #regulariz{
-    display: none;
-} */
-#login{
-    display: none;
+/*#login{
+    display: block;
 }
-
-.slider {
-    display:none;
+/*#login{
+    display: block;
 }
-
-#botones{
-}
-#welcomeUser{
-    display: none;
-}
-#botones{
-    display: none;
-
-} 
-#carrousel{
-    display: none;
-} 
-
-/* nav{
-    display: none;
-}  */
-
-/*#chat{
-    display: none;
-}
-
-
-.chatZone {
-    display: none;
-}*/
+#navBar, #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat {
 .colorNav{
     background-color: #55becc;
-}
+}*/
 
 #navLogo {
     width: 1.5em;
@@ -73,4 +44,3 @@
 .colorTexto{
     color: black;
 }
-
