@@ -1,42 +1,39 @@
-/*.loginPage{
-    display: none;
-}
-.slider{
-    display: none;
-
-}*/
 /* #regulariz{
     display: none;
 } */
-
-/*#login{
+#login{
     display: none;
-}*/
-
-/*#welcomeUser{
-    display: none;
-}*/
-
-/* #botones{
-    display: none;
-
 }
+
+.slider {
+    display:none;
+}
+
+#botones{
+}
+#welcomeUser{
+    display: none;
+}
+#botones{
+    display: none;
+
+} 
 #carrousel{
     display: none;
-} */
+} 
 
 /* nav{
     display: none;
-} */
+}  */
 
 /*#chat{
     display: none;
 }
 
+
 .chatZone {
     display: none;
 }*/
-
 .colorNav{
     background-color: #55becc;
 }
@@ -52,6 +49,14 @@
     display: block;
 }
 
+#chat {
+    display: none;
+}
+
+#chat_window{
+    display: none;
+ 
+} 
 .colorBotones{
     background-color: #55becc;
     height: 6em;
@@ -60,13 +65,12 @@
 .botonesReg{
     margin-top: 3em;
 }
+.loginPage{
+    display: none;
+} 
 
 
 .colorTexto{
     color: black;
 }
 
-.fas {
-    width: 20%;
-    height: 20%;
-}
