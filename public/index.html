@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="./materialize/css/materialize.css">
-
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./materialize/css/materialize.css">
+    <link rel="stylesheet" href="./css/valeuno.css">
     <link rel="shortcut icon" href="#">
     <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.5.5/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="#">
+  <title>Welcome to Firebase Hosting</title>
 
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
 
   </head>
   <body>
       <!-- regularización -->
 
-    <!-- <section>
-      <div class="col s12">
-        <h4 class="center">Regulariza tu Situación</h4>
-        <p class="center">¿Como ingresaste al país?</p>
-        <p class="center">(Según tu respuesta te daremos la mejor orientación posible)</p>
-      </div>
-      <div class="col s12 center">
-          <a class="waves-effect waves-light btn-large" onclick="regular()">Regular</a>
-          <a class="waves-effect waves-light btn-large" onclick="irregular()">Irregular</a>
-      </div>
-      <div id="textoRegIrr">
+  <section id="regulariz">
+    <div class="col s12">
+      <h4 class="center">Regulariza tu Situación</h4>
+      <p class="center">¿Como ingresaste al país?</p>
+      <p class="center">(Según tu respuesta te daremos la mejor orientación posible)</p>
+    </div>
+    <div class="col s12 center">
+      <a class="waves-effect waves-light btn-large" onclick="regular()">Regular</a>
+      <a class="waves-effect waves-light btn-large" onclick="irregular()">Irregular</a>
+    </div>
+    <div id="textoRegIrr">
 
-      </div>
-      <div class="col s12 center">
-          <a class="waves-effect waves-light btn-small">Descarga tu Documento</a>
+    </div>
+    <div class="col s12 center">
+      <a class="waves-effect waves-light btn-small">Descarga tu Documento</a>
 
-      </div>
-    </section>-->
+    </div>
+  </section>
   <!-- Login -->
-  <!-- <div class="container-fluid" id="login">
+   <div class="container-fluid" id="login">
 
     <div class="row">
       <div class="col-sm-4"></div>
@@ -57,11 +61,11 @@
       </div>
       <div class="col-sm-4"></div>
     </div>
-  </div>  -->
+  </div>  
 
 
   <!-- Pintura del chat -->
-  <!-- <div class="container-fluid" id="welcomeUser">
+  <div class="container-fluid" id="welcomeUser">
     <div id="userLogin"></div>
     <p id="out" style="text-align: left">
       <u>Sign Out</u>
@@ -87,7 +91,7 @@
         <i class="fas fa-map-marker-alt" id="mapIcon"></i>
       </div>
     </div> 
-  </div>-->
+  </div>
 
   <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
@@ -103,7 +107,7 @@
     <li><a href="#!">Cursos de español</a></li>  
   </ul>
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper" >
       <a href="#!" class="left brand-logo">Logo</a>
       <ul class="right">
     
@@ -114,7 +118,7 @@
   </nav>
 
   <!--Carousel-->
-  <div class="carousel carousel-slider center">
+  <div class="carousel carousel-slider center" id="carrousel">
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">Regulariza tu situación</a>
     </div>
@@ -132,18 +136,80 @@
     </div>
   </div>
 
-  <div class="fixed-action-btn">
+  <div class="fixed-action-btn" id="chat">
       <a class="btn-floating btn-large red">
           <i class="large material-icons">mode_comment</i>
       </a>
     </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="./materialize/js/materialize.js"></script>
-    <script src="./src/js/index.js"></script>
-  <script src="./src/js/chat.js"></script>
-  <script src="./src/js/chatMain.js"></script>
+
+  <!--botones-->
+  <section class="container" id="botones">
+        <div class="row">
+            <div class="col s6 m4">
+                <div id="box1">
+                    <p>Regularización migratoria</p>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div id="box2">
+                    <p>Trabajo</p>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div id="box3">
+                    <p>Salud</p>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div id="box4">
+                    <p>Educación</p>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div id="box5">
+                    <p>Vivienda</p>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div id="box6">
+                    <p>Curso de español</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Chat-->
+    <section id="chat" class="container-fluid">
+        <div class="row">
+            <div class="col s12">
+                <div class="bckr_hdr">
+                    <p class="hola">Hola, bienvenido </p>
+                    <p class="wrhere">Estamos aquí para responder tus preguntas relacionadas con Migrapp</p>
+                    <img class="chat_img" src="../public/image/chat.jpg" alt="">
+                    <p class="nombre">José</p>
+                </div>
+                <div class="col s12">
+                    <div class="msg_section"></div>
+                </div>
+                <div class="col s10">
+                    <input type="text" placeholder="Envía un mensaje...">
+                </div>
+                <div class="col s2">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>            
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="./materialize/js/materialize.js"></script>
+  <script src="./js/chat.js"></script>
+  <script src="./js/chatMain.js"></script>
   <script src="./js/regularizacionDescarga.js"></script>
   <script src="./js/page.js"></script>
+  <script src="./valeuno.js"></script>
+
   </body>
 </html>
