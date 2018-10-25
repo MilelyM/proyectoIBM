@@ -1,39 +1,8 @@
-/*.loginPage{
-    display: none;
-}
-.slider{
-    display: none;
-
-}*/
-/* #regulariz{
-    display: none;
-} */
-
 /*#login{
-    display: none;
-}*/
-
-/*#welcomeUser{
-    display: none;
-}*/
-
-/* #botones{
-    display: none;
-
-}
-#carrousel{
-    display: none;
-} */
-
-/* nav{
-    display: none;
-} */
-
-/*#chat{
-    display: none;
+    display: block;
 }
 
-.chatZone {
+#navBar, #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat {
     display: none;
 }*/
 
