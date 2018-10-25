@@ -35,5 +35,8 @@ display: block;
     width: 11em;
 }
 .botonesReg{
-    margin-top: 2em;
+    margin-top: 3em;
+}
+.loginPage{
+    display: none;
 }
