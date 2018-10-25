@@ -1,9 +1,24 @@
 #regulariz{
     display: none;
 }
-#login{
+/* #login{
+    display: none;
+} */
+/* #welcomeUser{
+    display: none;
+} */
+#botones{
+    display: none;
+
+}
+#carrousel{
     display: none;
 }
-#welcomeUser{
+nav{
     display: none;
+}
+
+#chat{
+    display: none;
+ 
 }
