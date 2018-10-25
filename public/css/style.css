@@ -1,6 +1,7 @@
-#regulariz{
+/* #regulariz{
     display: none;
 }
+
 
 #login{
     display: none;
@@ -8,16 +9,16 @@
 
 /*#welcomeUser{
     display: none;
-}*/
 
-/* #botones{
+}
+#botones{
     display: none;
 
-} */
-/* #carrousel{
+}
+#carrousel{
     display: none;
-} */
 
+}
 /* nav{
     display: none;
 } */
@@ -39,7 +40,7 @@
 
 .colorBotones{
     background-color: #55becc;
-    height: 5em;
+    height: 6em;
     width: 11em;
 }
 .botonesReg{
@@ -47,4 +48,11 @@
 }
 .loginPage{
     display: none;
+}
+.slider{
+    display: none;
+
+}
+.colorTexto{
+    color: black;
 }
