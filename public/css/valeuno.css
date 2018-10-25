@@ -2,7 +2,7 @@
 #box1, #box2, #box3, #box4, #box5, #box6 {
     color: white;
     height: 7rem;
-    /* background-color: red; */
+ /* background-color: red; */
     text-align: center;
 }
 
@@ -23,12 +23,22 @@ h1 {
 }
 
 /* Chat */
-/* #chat {
+
+/*#chat {
+    display: none;
+}*/
+
+.chatZone {
     display: none;
 } */
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.msg_section {
+    border-radius: 50%;
+    background-color: #55BECC;
 }
 
 .bckr_hdr {
@@ -86,12 +96,12 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     -webkit-box-shadow: none !important;
 }
 
-.chat_img {
-    width: 23%;
-    border-radius: 34px;
+#chat_img {
+    width: 4em;
+    height: 4em;
 }
 
-.wrhere {
+.where {
     margin-bottom: 5px;
 }
 

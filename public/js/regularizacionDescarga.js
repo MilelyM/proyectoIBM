@@ -13,4 +13,3 @@ function irregular(){
     <li><span>holahoka</span></li>
     <li><span>holahoka</span></li>
     
-`}
