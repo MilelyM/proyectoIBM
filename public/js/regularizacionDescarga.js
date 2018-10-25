@@ -15,5 +15,4 @@ function irregular(){
     <li><span>holahoka</span></li>
 
     <button>Descarga esta información</button>
-    
-`}
+ ` }
