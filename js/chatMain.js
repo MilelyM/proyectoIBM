@@ -4,24 +4,34 @@ let contUser = 0;
 
 // Initialize Firebase
 // Initialize Firebase
-window.onload = () => {
-  var config = {
-    apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
-    authDomain: "ibmchat-e1ce2.firebaseapp.com",
-    databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
-    projectId: "ibmchat-e1ce2",
-    storageBucket: "ibmchat-e1ce2.appspot.com",
-    messagingSenderId: "299553386584"
-  };
-
-  if (!firebase.apps.length) {
-    firebase.initializeApp({});
-  }
-
-  let provider = new firebase.auth.GoogleAuthProvider();
+// window.onload = () => {
+//   var config = {
+//     apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
+//     authDomain: "ibmchat-e1ce2.firebaseapp.com",
+//     databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
+//     projectId: "ibmchat-e1ce2",
+//     storageBucket: "ibmchat-e1ce2.appspot.com",
+//     messagingSenderId: "299553386584"
+//   };
 
 
-};
+
+
+// };
+firebase.initializeApp({
+  authDomain: "ibmchat-e1ce2.firebaseapp.com",
+  databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
+  projectId: "ibmchat-e1ce2",
+  storageBucket: "ibmchat-e1ce2.appspot.com",
+  messagingSenderId: "299553386584"
+});
+if (!firebase.apps.length) {
+  firebase.initializeApp({});
+}
+
+let provider = new firebase.auth.GoogleAuthProvider();
+//Inicializa una instancia de Cloud Firestore
+var db = firebase.database();
 
 //Autenticación
 document.addEventListener('DOMContentLoaded', function () {
