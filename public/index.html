@@ -29,11 +29,11 @@
 
 <body>
   <!-- Login -->
-  <div class="container-fluid" id="login">
+  <section id="login">
 <div class="row">
      <div class="col s12">
        <div class="center" id="titulo">
-          <img src="./image/logoblanco.png" alt="" class="responsive-img imglogo" width="30%" height="30%">
+        
          <!-- <h1 style="color: #E5E5E5 ">SOCIAL</h1> -->
          <!-- <br> -->
          <!-- <h1 style="color: #E5E5E5">INMG</h1> -->
@@ -49,12 +49,16 @@
          <div id="firebaseui-auth-container" ></div>
        </form>
      </div>
+     <div id="userLogin"></div>
  </div>
+</section>
+  <!--fin del login-->
 
+<section id="navbar">
   <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!" onclick="inicio()">Inicio</a></li>
-      <li><a href="#!" onclick="regularizarBtn()">Regularizaciín migratoria</a></li>
+      <li><a href="#!" onclick="regularizarBtn()">Regularización migratoria</a></li>
       <li class="divider"></li>
       <li><a href="#!">Trabajo</a></li>
       <li class="divider"></li>
@@ -74,13 +78,19 @@
         <div class="nav-wrapper">
           <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
           <ul class="right">
-            <li><p>ES/CRL</p></li>
+            <li><a class="btn N/A transparent z-depth-0
+              ">ES</a>/<a class="btn N/A transparent z-depth-0
+              ">CRL</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
           </ul>
         </div>
       </nav>
     </div>
+  </section>
+
+  <!--Fin del navbar-->
+
 
   <!-- regularización -->
   <section id="regulariz">
@@ -99,6 +109,8 @@
       <!-- <a class="waves-effect waves-light btn-small">Descarga tu Documento</a> -->
     </div>
   </section>
+<!--Fin de la regularización-->
+
 
   <!--Carousel-->
   <section id="carousel">
@@ -117,7 +129,7 @@
           <!--random image -->
           <div class="caption left-align">
             <h3 class="tamañoTextslidr">Comienza una nueva vida</h3>
-            <a class="btn waves-effect white  botonSlider "onclick="regularizarBtn()">Regulariza tu situación</a>
+            <a class="btn waves-effect white  botonSlider " onclick="regularizarBtn()">Regulariza tu situación</a>
           </div>
         </li>
         <li>
@@ -125,7 +137,7 @@
           <!--random image -->
           <div class="caption left-align">
             <h3 class="tamañoTextslidr">Hacer un mejor futuro depende de ti</h3>
-            <a class="btn waves-effect white  botonSlider"onclick="regularizarBtn()">Regulariza tu situación</a>
+            <a class="btn waves-effect white  botonSlider" onclick="regularizarBtn()">Regulariza tu situación</a>
 
           </div>
         </li>
@@ -133,20 +145,21 @@
     </div>
   </section>
 
+  <section id="btnSection">
   <!--Botón que dirije al chat-->
-  <div class="fixed-action-btn" id="chat-btn">
+  <div class="fixed-action-btn" id="chatBtn">
     <a class="btn-floating btn-large red" onclick="iniciarChat()">
       <i class="large material-icons">mode_comment</i>
     </a>
   </div>
-
+</section>
 
   <!--botones con distintos items-->
   <section class="container botonesReg" id="botones">
     <div class="row">
       <div class="col s6 m4">
         <div id="box1">
-          <a class="btn colorBotones"><i class="fas fa-passport" onclick="regularizarBtn()"></i>Regularización migratoria</a>
+          <a class="btn colorBotones" onclick="regularizarBtn()"><i class="fas fa-passport" ></i>Regularización migratoria</a>
         </div>
       </div>
       <div class="col s6 m4">
@@ -207,8 +220,9 @@
     </div>
   </section> -->
     <!-- Pintura del chat -->
-    <div class="container-fluid" id="welcomeUser">
-      <div id="userLogin"></div>
+    <section id="welcomeUser">
+    
+      <!-- <div id="userLogin"></div> -->
       <!-- <a  class="btn" id="out" style="text-align: left">
         <u>Sign Out</u>
       </a>  -->
@@ -233,10 +247,10 @@
           <i class="fas fa-map-marker-alt" id="mapIcon"></i>
         </div>
       </div>
-    </div>
+    </section> 
 
   <!--Chat-->
-  <section id="chat" class="container-fluid">
+  <!-- <section id="chat">
     <div class="row">
       <div class="col s12">
         <div class="bckr_hdr">
@@ -247,18 +261,30 @@
         </div>
         <div class="col s12">
           <div class="msg_section">
+              <div class="chatZone">
+                  <ul id="userOnline"></ul>
+                 <div id="messageContainer"></div> -->
             <!--aqui mensajes-->
+          <!-- </div>
+        </div>
+        <div class="row">
+            <label for="usr">Destinatario:</label>
+          </div>
+          <div class="row">
+            <input type="text" class="form-control col-md-4" id="receiverName">
+            <div id="contactsChat"></div>
+          </div>
+          <div class="row">
+            <textarea class="form-control col-md-4" id="txt" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-success" id="sendButton" value="SEND" onclick="sendMessage()">Enviar</button> -->
+<!--             
           </div>
         </div>
-        <div class="col s10">
-          <input type="text" placeholder="Envía un mensaje...">
-        </div>
-        <div class="col s2">
-          <button><i class="fas fa-paper-plane"></i></button>
-        </div>
       </div>
-    </div>
-  </section>
+    </div
+  </section>> -->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

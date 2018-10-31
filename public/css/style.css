@@ -1,9 +1,12 @@
 
-#login{
+/* #login{
     display: block;
+} */
+#chat{
+    display: none;
 }
 
- #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone{
+ #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
     display: none;
 }
 
@@ -63,4 +66,7 @@ background-color: #55becc !important;
 }
 .imglogo{
     margin-left: 8rem !important;
+}
+.marginREGeIRR{
+    margin: 3em;
 }
