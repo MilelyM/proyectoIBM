@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const uiConfig = {
       signInSuccessUrl: '/',
       signInOptions: [ // Leave the lines as is for the providers you want to offer
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID
       ], // Terms of service
       tosUrl: '/terms-of-service'
     };
@@ -98,6 +97,7 @@ out.addEventListener('click', () => {
   login.style.display="block";
   inputs.style.display="block"
   loginContent.style.display = "block";
+  navbar.style.display="none"
 
 });
 

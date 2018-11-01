@@ -11,6 +11,7 @@ login.style.display="none"
      botones.style.display="block";
     regulariz.style.display="none";
     login.style.display="none";
+    navbar.style.display="block"
 }
     document.getElementById("out").addEventListener("click", function(){    
     carousel.style.display="none";

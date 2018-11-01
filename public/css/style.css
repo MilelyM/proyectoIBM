@@ -9,7 +9,7 @@
  /* #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
     display: none;
 } */
-#regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
+#regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection, #navBar{
     display: none;
 }
 
