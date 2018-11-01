@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/valeuno.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="shortcut icon" href="image/logoblanco.png">
+  <title>Welcome Migrapp</title>
+
+  <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/5.5.5/firebase-app.js"></script> -->
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script> -->
+  <!-- initialize the SDK after all desired features are loaded -->
+  <!-- <script defer src="/__/firebase/init.js"></script> -->
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+</head>
+
+<body>
+
+        <ul id="dropdown1" class="dropdown-content">
+                <li><a href="index1.html" onclick="inicio()">Inicio</a></li>
+                <li><a href="index2.html" onclick="regularizarBtn()">Regularizaciín migratoria</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Trabajo</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Salud</a></li>
+                <li><a href="#!">Educación</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Vivienda</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Cursos de español</a></li>
+                <li><a id="out" style="text-align: left">
+                  <u>Cerrar Sesión</u>
+                </a> </li>
+              </ul>
+          
+              <div class="navbar-fixed" id="navBar">
+                <nav class="colorNav">
+                  <div class="nav-wrapper">
+                    <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
+                    <ul class="right">
+                      <li><p>ES/CRL</p></li>
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+  <!--Carousel-->
+  <section id="carousel">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="image/img-1.jpg" class="imgSlider"> 
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="tamañoTextslidr">Bienvenido a Chile</h3>
+            <a class="btn waves-effect white  botonSlider"href="index2.html" >Regulariza tu situación</a>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-2.jpg" class="imgSlider">
+          <!--random image -->
+          <div class="caption left-align">
+            <h3 class="tamañoTextslidr">Comienza una nueva vida</h3>
+            <a class="btn waves-effect white  botonSlider  " href="index2.html" >Regulariza tu situación</a>
+          </div>
+        </li>
+        <li>
+          <img src="image/img-3.jpg">
+          <!--random image -->
+          <div class="caption left-align">
+            <h3 class="tamañoTextslidr">Hacer un mejor futuro depende de ti</h3>
+            <a class="btn waves-effect white  botonSlider" href="index2.html" >Regulariza tu situación</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  
+
+  <!--botones con distintos items-->
+  <section class="container botonesReg" id="botones">
+    <div class="row">
+      <div class="col s6 m4">
+        <div id="box1">
+          <a class="btn colorBotones" href="index2.html"><i class="fas fa-passport" onclick="regularizarBtn()"></i>Regularización migratoria</a>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div id="box2">
+          <a class="btn colorBotones"href="index2.htm"><i class="fas fa-briefcase-medical"></i><br>Trabajo</a>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div id="box3">
+          <a class="btn colorBotones"><i class="fas fa-briefcase-medical"></i><br>Salud</a>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div id="box4">
+          <a class="btn colorBotones"><i class="fas fa-graduation-cap"></i><br>Educación</a>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div id="box5">
+          <a class="btn colorBotones"><i class="fas fa-home "></i><br>Vivienda</a>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div id="box6">
+          <a class="btn colorBotones"><i class="fab fa-amilia"></i><br>Clases de español</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pintura del chat -->
+   <section class="container-fluid" id="welcomeUser">
+    <div id="userLogin"></div>
+    <p id="out" style="text-align: left">
+      <u>Sign Out</u>
+    </p>
+
+    <div class="chatZone"> 
+      <!--Aquí se imprimen los mensajes-->
+       <div id="messageContainer"></div>
+      <div class="row">
+        <div class="col-sm-4" id="mapContent"></div>
+      </div>
+      <div class="row">
+        <label for="usr">Destinatario:</label>
+      </div>
+      <div class="row">
+        <input type="text" class="form-control col-md-4" id="receiverName">
+        <div id="contactsChat"></div>
+      </div>
+      <div class="row">
+        <textarea class="form-control col-md-4" id="txt" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-outline-success" id="sendButton" value="SEND" onclick="sendMessage()">Enviar</button>
+        <i class="fas fa-map-marker-alt" id="mapIcon"></i>
+      </div>
+    </div>
+  </section> 
+  
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDAA4JbcHK1nV-K4ox0ubnaG_PxeTEpgkY",
+      authDomain: "ibmchat-e1ce2.firebaseapp.com",
+      databaseURL: "https://ibmchat-e1ce2.firebaseio.com",
+      projectId: "ibmchat-e1ce2",
+      storageBucket: "ibmchat-e1ce2.appspot.com",
+      messagingSenderId: "299553386584"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/chat.js"></script>
+  <script src="./js/chatMain.js"></script>
+  <script src="./js/regularizacionDescarga.js"></script>
+  <script src="./js/page.js"></script>
+  <script src="./js/botones.js"></script>
+
+
+</body>
+
+</html>

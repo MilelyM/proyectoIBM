@@ -1,0 +1,210 @@
+/* valeuno */
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    color: white;
+    height: 7rem;
+ /* background-color: red; */
+    text-align: center;
+}
+
+/* valedos */
+#header {
+    text-align: center;
+}
+
+.box1, .box2 {
+    background-color: blueviolet;
+    height: 7rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Chat */
+
+/*#chat {
+    display: none;
+}
+
+.chatZone {
+    display: none;
+}*/
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.msg_section {
+    border-radius: 50%;
+    background-color: #55BECC;
+}
+
+.bckr_hdr {
+    background-color: #55BECC;
+    height: 15rem;
+    padding: 19px;
+}
+
+.row .col {
+    padding: 0;
+}
+
+.hola {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+.msg_section {
+    background-color: white;
+    height: 21rem;
+}
+
+.fa-paper-plane:before {
+    font-size: 2.2rem;
+    color: #EE542D;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-top: 1px rgb(216, 210, 210) solid;
+    padding: 7px;
+}
+button:hover {
+    background-color: transparent;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    border-bottom: none;
+    border-top: 1px rgb(216, 210, 210) solid;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+#chat_img {
+    width: 4em;
+    height: 4em;
+}
+
+.where {
+    margin-bottom: 5px;
+}
+
+.nombre {
+    margin-left: 14px;
+}
+
+
+/* Nav */
+.logo-nav {
+    width: 59%;
+    margin-left: 7px;
+}
+
+nav .nav-wrapper {
+    padding: 6px;
+    
+}
+
+/* btns */
+.btn-large {
+    height: 144px;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 26px 24px;
+    background-color: #55BECC;
+}
+
+.fa-hand-paper:before {
+    font-size: 58px;
+}
+
+.btn_title {
+    text-transform: none;
+}
+
+.btn_subtitle {
+    color: rgb(5, 1, 58);
+    font-size: 13px;
+    text-transform: none;
+    line-height: 15px;
+}
+
+/* textos regular, irregular */
+li {
+    color: #EE542D;
+}
+
+.first_li {
+    margin-top: 10px;
+}
+
+span {
+    color: black;
+}
+
+
+p.irr_title {
+    text-transform: none;
+}
+
+p.re_title {
+    text-transform: none;
+}
+
+p.irr_subtitle, .re_subtitle {
+    line-height: 13px;
+    font-size: 12px;
+    text-transform: none;
+    color: rgb(9, 9, 65);
+}
+
+.fa-hand-paper:before {
+    font-size: 48px;
+}
+
+.fa-user-clock:before {
+    font-size: 48px;
+}
+
+.title_page {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p.subtitle_page {
+    color: rgb(22, 22, 110);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+p.subtitle_page2 {
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+}
+
+.download_btn {
+    background-color: #55BECC;
+    color: white;
+    font-weight: 600;
+}
