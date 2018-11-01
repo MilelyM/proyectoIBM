@@ -3,9 +3,9 @@ function regular() {
      <div class='container'>
     <div class='row marginREGeIRR'>
     <div class="col s12 left ">
-    <li><span>Dirígete al departamento de extranjeria y migración</span></li>
-    <li><span>Lleva tu ID o pasaporte + tarjeta de turismo o certificado de viajes emitido por la PDI</span></li>
-    <li><span>Debes llevar tu certificado (PER/COL/DOM) de antecedentes, de tu país de origen, en el cado de ser menor de edad se debe adjuntar el certificado de nacimiento</span></li>
+    <li class ="listas"><span>Dirígete al departamento de extranjeria y migración</span></li>
+    <li class ="listas"><span>Lleva tu ID o pasaporte + tarjeta de turismo o certificado de viajes emitido por la PDI</span></li>
+    <li class ="listas"><span>Debes llevar tu certificado (PER/COL/DOM) de antecedentes, de tu país de origen, en el cado de ser menor de edad se debe adjuntar el certificado de nacimiento</span></li>
     </div>
    </div>
    <div class='row marginREGeIRR'>
@@ -24,10 +24,10 @@ function irregular() {
     <div class='row marginREGeIRR'>
     <div class="col s12  left">
 
-    <li><span>Dirígete al departamento de migraciones de la PDI</span></li>
-    <li><span>Lleva tu ID o pasaporte</span></li>
-    <li><span>Notifica tu situación actual</span></li>
-    <li><span>Comprométete a iniciar tu proceso de regularización con firma mensual</span></li>
+    <li class ="listas"><span>Dirígete al departamento de migraciones de la PDI</span></li>
+    <li class ="listas"><span>Lleva tu ID o pasaporte</span></li>
+    <li class ="listas"><span>Notifica tu situación actual</span></li>
+    <li class ="listas"><span>Comprométete a iniciar tu proceso de regularización con firma mensual</span></li>
     </div>
     </div>
     <div class='row marginREGeIRR'>

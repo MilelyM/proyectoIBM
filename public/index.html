@@ -45,9 +45,9 @@
           <div class="input-field col s12">
               <input placeholder="Contraseña" id="first_name" type="text" class="validate">
           </div>
-          <div class="col s12">
-            <li><a class="waves-effect waves-light btn" >ENTRAR</a></li><br>
-            <li> <a class="waves-effect waves-light btn" >REGISTRATE</a></li>
+          <div class="col s12 entradaYregistro">
+            <li class="lisLogin"><a class="waves-effect waves-light btn btnEntrar" >ENTRAR</a></li><br>
+            <!-- <li> <a class="waves-effect waves-light btn" >REGISTRATE</a></li> -->
         </div>
           
         </div>
@@ -102,23 +102,7 @@
   <!--Fin del navbar-->
 
 
-  <!-- regularización -->
-  <section id="regulariz">
-    <div class="col s12">
-      <h4 class="center colorTexto">Regulariza tu Situación</h4>
-      <p class="center colorTexto">¿Como ingresaste al país?</p>
-      <p class="center colorTexto">(Según tu respuesta te daremos la mejor orientación posible</p>
-    </div>
-    <div class="col s12 center">
-      <a class="waves-effect waves-light btn-large" onclick="regular()">Regular</a>
-      <a class="waves-effect waves-light btn-large" onclick="irregular()">Irregular</a>
-    </div>
-    <div id="textoRegIrr">
-    </div>
-    <div class="col s12 center" id="descarga">
-      <!-- <a class="waves-effect waves-light btn-small">Descarga tu Documento</a> -->
-    </div>
-  </section>
+
 <!--Fin de la regularización-->
 
 
@@ -200,6 +184,23 @@
     </div>
   </section>
 
+    <!-- regularización -->
+    <section id="regulariz">
+      <div class="col s12">
+        <h4 class="center colorTexto">Regulariza tu Situación</h4>
+        <p class="center colorTexto">¿Como ingresaste al país?</p>
+        <p class="center colorTexto">(Según tu respuesta te daremos la mejor orientación posible</p>
+      </div>
+      <div class="col s12 center">
+        <a class="waves-effect waves-light btn-large" onclick="regular()">Regular</a>
+        <a class="waves-effect waves-light btn-large" onclick="irregular()">Irregular</a>
+      </div>
+      <div id="textoRegIrr">
+      </div>
+      <div class="col s12 center" id="descarga">
+        <!-- <a class="waves-effect waves-light btn-small">Descarga tu Documento</a> -->
+      </div>
+    </section>
   <!-- Pintura del chat -->
   <!-- <section class="container-fluid" id="welcomeUser">
     <div id="userLogin"></div>

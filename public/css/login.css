@@ -31,13 +31,50 @@ textarea {
 #titulo{
     width: 50% !important;
 } */
+
 .inputs{
     margin-top: 2em;
     width: 20%
 }
-@media (max-width: 375px) {
+@media (min-width: 1281px) {
     .inputs{
-        width: 74%
+        width: 16.5%
+        
+    }
+    
+  }
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .inputs{
+        width: 22%
+        
+    }
+
+  }
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .inputs{
+        width: 30%
+    }
+  }
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .inputs{
+        width: 51%
+    }
+    
+    
+  }
+  
+@media (min-width: 320px) and (max-width: 424px) {
+    .inputs{
+        width: 60%
+    }
+    
+    
+  }
+@media (max-width: 320px) {
+    .inputs{
+        width: 71%
     }}
 
 .input-field ::placeholder {
@@ -52,5 +89,15 @@ textarea {
 background-color: aliceblue;   
 }
 .logoInicio{
-    height: 7em !important;
+    height: 9em !important;
+}
+.entradaYregistro{
+    margin-top: 3em !important;
+}
+.lisLogin{
+    list-style: none;
+}
+.btnEntrar{
+    background-color: #55BECC;
+    width: 100%;
 }
