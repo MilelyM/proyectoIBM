@@ -2,14 +2,31 @@
 /* #login{
     display: block;
 } */
-#chat{
+/* #chat{
+    display: none;
+} */
+
+ /* #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
+    display: none;
+} */
+#regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
     display: none;
 }
 
- #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
+
+
+.bienvenido{
+    display: block;
+}
+
+#chat {
     display: none;
 }
 
+#chat_window{
+    display: none;
+ 
+} 
 html, body {
     margin: 0;
 }
@@ -24,19 +41,6 @@ html, body {
     height: 1.5em;
     margin-left: 10px;
 }
-
-.bienvenido{
-    display: block;
-}
-
-#chat {
-    display: none;
-}
-
-#chat_window{
-    display: none;
- 
-} 
 .colorBotones{
     background-color: #55becc;
     height: 8em;

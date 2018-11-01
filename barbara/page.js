@@ -1,15 +1,15 @@
-$(document).ready(function () {
-  $(".dropdown-trigger").dropdown({
-    constrainWidth: false
-  });
+// $(document).ready(function () {
+//   $(".dropdown-trigger").dropdown({
+//     constrainWidth: false
+//   });
 
-  $(document).ready(function () {
-    $('.carousel').carousel();
+//   $(document).ready(function () {
+//     $('.carousel').carousel();
 
-    setInterval(function () {
-      $('.carousel').carousel('next');
-    }, 4000);
-  });
+//     setInterval(function () {
+//       $('.carousel').carousel('next');
+//     }, 4000);
+//   });
 
-  $('.fixed-action-btn').floatingActionButton();
-});
+//   $('.fixed-action-btn').floatingActionButton();
+// });

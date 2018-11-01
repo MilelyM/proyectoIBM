@@ -1,70 +1,38 @@
-[debug] [2018-10-31T20:50:10.682Z] ----------------------------------------------------------------------
-[debug] [2018-10-31T20:50:10.684Z] Command:       /usr/bin/node /usr/bin/firebase serve
-[debug] [2018-10-31T20:50:10.684Z] CLI Version:   5.1.1
-[debug] [2018-10-31T20:50:10.684Z] Platform:      linux
-[debug] [2018-10-31T20:50:10.684Z] Node Version:  v10.8.0
-[debug] [2018-10-31T20:50:10.761Z] Time:          Wed Oct 31 2018 17:50:10 GMT-0300 (Chile Summer Time)
-[debug] [2018-10-31T20:50:10.761Z] ----------------------------------------------------------------------
+[debug] [2018-11-01T15:28:08.564Z] ----------------------------------------------------------------------
+[debug] [2018-11-01T15:28:08.569Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-11-01T15:28:08.569Z] CLI Version:   5.1.1
+[debug] [2018-11-01T15:28:08.569Z] Platform:      linux
+[debug] [2018-11-01T15:28:08.569Z] Node Version:  v10.8.0
+[debug] [2018-11-01T15:28:08.641Z] Time:          Thu Nov 01 2018 12:28:08 GMT-0300 (Chile Summer Time)
+[debug] [2018-11-01T15:28:08.641Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-10-31T20:50:10.822Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-31T20:50:10.823Z] > authorizing via signed-in user
-[debug] [2018-10-31T20:50:10.823Z] [iam] checking project ibmchat-e1ce2 for permissions ["firebase.projects.get"]
-[debug] [2018-10-31T20:50:10.824Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-10-31T20:50:10.825Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2018-11-01T15:28:08.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-01T15:28:08.716Z] > authorizing via signed-in user
+[debug] [2018-11-01T15:28:08.716Z] [iam] checking project ibmchat-e1ce2 for permissions ["firebase.projects.get"]
+[debug] [2018-11-01T15:28:08.719Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-01T15:28:08.719Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2018-10-31T20:50:10.995Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-31T20:50:11.106Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2:testIamPermissions  
+[debug] [2018-11-01T15:28:09.138Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T15:28:09.199Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2:testIamPermissions  
 
-[debug] [2018-10-31T20:50:12.226Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-31T20:50:12.228Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2  
+[debug] [2018-11-01T15:28:10.326Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T15:28:10.328Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2  
  
-[debug] [2018-10-31T20:50:13.368Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/laboratoria/ibmChat'...
-[info] 
-[debug] [2018-10-31T20:50:17.874Z] Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
-    at Object.mkdirSync (fs.js:729:3)
-    at Object.assertLogsPath (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
-    at new Controller (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
-    at FunctionsEmulator.start (/usr/lib/node_modules/firebase-tools/lib/functionsEmulator.js:113:21)
-    at Object.start (/usr/lib/node_modules/firebase-tools/lib/serve/functions.js:9:29)
-    at /usr/lib/node_modules/firebase-tools/lib/serve/index.js:17:21
-    at arrayMap (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
-    at Function.map (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9556:14)
-    at _serve (/usr/lib/node_modules/firebase-tools/lib/serve/index.js:15:7)
-    at Command._action (/usr/lib/node_modules/firebase-tools/commands/serve.js:47:12)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2018-10-31T20:52:25.554Z] ----------------------------------------------------------------------
-[debug] [2018-10-31T20:52:25.556Z] Command:       /usr/bin/node /usr/bin/firebase serve
-[debug] [2018-10-31T20:52:25.556Z] CLI Version:   5.1.1
-[debug] [2018-10-31T20:52:25.556Z] Platform:      linux
-[debug] [2018-10-31T20:52:25.556Z] Node Version:  v10.8.0
-[debug] [2018-10-31T20:52:25.556Z] Time:          Wed Oct 31 2018 17:52:25 GMT-0300 (Chile Summer Time)
-[debug] [2018-10-31T20:52:25.556Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-10-31T20:52:25.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-31T20:52:25.565Z] > authorizing via signed-in user
-[debug] [2018-10-31T20:52:25.565Z] [iam] checking project ibmchat-e1ce2 for permissions ["firebase.projects.get"]
-[debug] [2018-10-31T20:52:25.567Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2:testIamPermissions  
-
-[debug] [2018-10-31T20:52:26.667Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-31T20:52:26.669Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/ibmchat-e1ce2  
- 
-[debug] [2018-10-31T20:52:27.819Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T15:28:11.414Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/laboratoria/ibmChat'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2018-10-31T20:52:28.865Z] Fetching environment
-[debug] [2018-10-31T20:52:28.880Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/299553386584:getServerAppConfig  
+[debug] [2018-11-01T15:28:16.504Z] Fetching environment
+[debug] [2018-11-01T15:28:16.528Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/299553386584:getServerAppConfig  
  
-[debug] [2018-10-31T20:52:28.881Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/299553386584/clients/_:getWebAppConfig  
+[debug] [2018-11-01T15:28:16.529Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/299553386584/clients/_:getWebAppConfig  
  
-[debug] [2018-10-31T20:52:29.180Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-31T20:52:29.181Z] Starting @google-cloud/functions-emulator
-[debug] [2018-10-31T20:52:29.446Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T15:28:16.838Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T15:28:16.839Z] Starting @google-cloud/functions-emulator
+[debug] [2018-11-01T15:28:17.905Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
 [info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2018-10-31T20:52:32.779Z] Parsing function triggers
+[info] ✔  hosting: Local server: http://localhost:5005
+[debug] [2018-11-01T15:28:20.488Z] Parsing function triggers
 [info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.

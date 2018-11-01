@@ -1,18 +1,26 @@
+/* 
 
-<<<<<<< HEAD:public/css/style.css
-/* #login{
+#chat, #dropdown1{
+    display: none !important;
+}
+
+.bienvenido{
     display: block;
-} */
-#chat{
+}
+
+#chat {
     display: none;
 }
+
+#chat_window{
+    display: none;
+ 
+} 
 
  #regulariz, #carousel, #chat-btn, #botones, #welcomUser, #chat, .chatZone, #btnSection{
-    display: none;
+    display: none !important;
 }
 
-=======
->>>>>>> 585523e1f899961a20da9c52e5b4c672f0cb3321:css/style.css
 html, body {
     margin: 0;
 }
@@ -28,18 +36,6 @@ html, body {
     margin-left: 10px;
 }
 
-.bienvenido{
-    display: block;
-}
-
-#chat {
-    display: none;
-}
-
-#chat_window{
-    display: none;
- 
-} 
 .colorBotones{
     background-color: #55becc;
     height: 8em;
@@ -50,13 +46,13 @@ html, body {
 }
 .botonesReg{
     margin-top: 3em;
-}
+} */
 /* .loginPage{
     display: none;
 }  */
 
 
-.colorTexto{
+/* .colorTexto{
     color: black;
 }
 
@@ -67,13 +63,9 @@ background-color: #55becc !important;
 .tamañoTextslidr{
     font-size: 35px
 }
-/* .imglogo{
+ .imglogo{
     margin-left: 8rem !important;
-<<<<<<< HEAD:public/css/style.css
 }
 .marginREGeIRR{
     margin: 3em;
-}
-=======
 } */
->>>>>>> 585523e1f899961a20da9c52e5b4c672f0cb3321:css/style.css

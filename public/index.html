@@ -7,7 +7,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./materialize/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- <link rel="stylesheet" href="./materialize/css/materialize.css"> -->
   <link rel="stylesheet" href="./css/valeuno.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/login.css">
@@ -29,29 +31,37 @@
 
 <body>
   <!-- Login -->
-  <section id="login">
-<div class="row">
-     <div class="col s12">
-       <div class="center" id="titulo">
-        
-         <!-- <h1 style="color: #E5E5E5 ">SOCIAL</h1> -->
-         <!-- <br> -->
-         <!-- <h1 style="color: #E5E5E5">INMG</h1> -->
-         <div class="input-field  col s12 ">
+  <section class="  center" id="login" style="display: block" >
+    <div class="container inputs" id="inputs">
+    <div class="row ">
+      <div class="col s12 center">
+          <img  class="responsive-img logoInicio" src="./image/logoblanco.png">
+          <!-- <h1 style="color: #E5E5E5 ">SOCIAL</h1> -->
+          <!-- <br> -->
+          <!-- <h1 style="color: #E5E5E5">INMG</h1> -->
+          <div class="input-field  col s12 ">
             <input placeholder="Número de celular" id="first_phone" type="text" class="validate " >
           </div>
           <div class="input-field col s12">
               <input placeholder="Contraseña" id="first_name" type="text" class="validate">
-            </div>
+          </div>
+          <!-- <div class="col s12">
+            <li><a class="waves-effect waves-light btn" >ENTRAR</a></li><br>
+            <li> <a class="waves-effect waves-light btn" >REGISTRATE</a></li>
+        </div> -->
+          
+        </div>
+      </div>
+    </div>
+      <div class="row" style="width: 100%">
+        <form action="" id="loginContent" onclick="inicio()">
+          <div id="firebaseui-auth-container"  ></div>
+        </form>
+      </div>
+      <div id="userLogin"></div>
+      <a class="white-text" id="regist" href="#"><u>Ingresa como Invitado</u></a>
 
-       </div>
-       <form action="" id="loginContent">
-         <div id="firebaseui-auth-container" ></div>
-       </form>
-     </div>
-     <div id="userLogin"></div>
- </div>
-</section>
+  </section>
   <!--fin del login-->
 
 <section id="navbar">
@@ -73,7 +83,7 @@
       </a> </li>
     </ul>
 
-    <div class="navbar-fixed" id="navBar">
+    <div class="navbar-fixed" >
       <nav class="colorNav">
         <div class="nav-wrapper">
           <a href="#!" class="left brand-logo"><img id="navLogo" src="image/logoblanco.png"></a>
@@ -290,7 +300,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script src="./materialize/js/materialize.js"></script>
+  <!-- <script src="./materialize/js/materialize.js"></script> -->
   <script src="./js/index.js"></script>
   <script src="./js/chat.js"></script>
   <script src="./js/chatMain.js"></script>

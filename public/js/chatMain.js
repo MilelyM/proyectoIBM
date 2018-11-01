@@ -40,11 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (user) {
         console.log(user)
         document.getElementById("userLogin").innerHTML = "Hola " + user.displayName;
-        login.style.display = "none";
-                navBar.style.display = "block";
-        regulariz.style.display = "none";
-        carousel.style.display = "block"; 
-        botones.style.display = "block";
+        inicio()
+        // login.style.display = "none";
+        //         navBar.style.display = "block";
+        // regulariz.style.display = "block";
+        // carousel.style.display = "block"; 
+        // botones.style.display = "block";
       
         chatBtn.style.display = "block"
 
@@ -95,7 +96,8 @@ out.addEventListener('click', () => {
   console.log('chaolin ');
   firebase.auth().signOut();
   login.style.display="block";
-loginContent.style.display = "block";
+  inputs.style.display="block"
+  loginContent.style.display = "block";
 
 });
 

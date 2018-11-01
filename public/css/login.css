@@ -4,17 +4,18 @@
     bottom:0;
     left:0;
     right:0;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background: url("../image/img-2.jpg") center center;
     background-size:cover;
-    -webkit-filter: opacity(.6);
-    filter: opacity(.6);
-}
+    /* -webkit-filter: opacity(.6); */
+    /* filter:brightness(0.7); */
+    opacity: 0.8;
+} 
 
 
 
-#img-logo {
+/* #img-logo {
 
     width:10em;
     height: 10em;
@@ -27,4 +28,29 @@
 textarea {
     width: 60%;
 }
+#titulo{
+    width: 50% !important;
+} */
+.inputs{
+    margin-top: 2em;
+    width: 20%
+}
+@media (max-width: 375px) {
+    .inputs{
+        width: 74%
+    }}
 
+.input-field ::placeholder {
+    font-size: 12px;
+    padding-left: 1em;
+    color: black;
+
+}
+.input-field{
+    margin: 0%;
+ border:1em;
+background-color: aliceblue;   
+}
+.logoInicio{
+    height: 7em !important;
+}

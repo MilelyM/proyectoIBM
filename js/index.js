@@ -23,16 +23,16 @@
 //     botones.style.display = "none";
 // }
 
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.slider').slider();
-    setInterval(function(){
-    }, 4000);
+// $(document).ready(function(){
+//     $('.sidenav').sidenav();
+//     $('.slider').slider();
+//     setInterval(function(){
+//     }, 4000);
 
-    $('.dropdown-trigger').dropdown({
-      constrainWidth: false
-    });
+//     $('.dropdown-trigger').dropdown({
+//       constrainWidth: false
+//     });
     
-    $('.fixed-action-btn').floatingActionButton();
-  });
+//     $('.fixed-action-btn').floatingActionButton();
+//   });
   
